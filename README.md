@@ -1,7 +1,7 @@
 # WireGuard-VPN.
 - `WireGuard "VPN"`
+![image](https://github.com/TecnologyCASM/WG-Easy_VPN/assets/107158068/61d6b384-e953-4793-bb50-2e2d39328a17)
 
-![image](https://github.com/TecnologyCASM/WG-Easy_VPN/assets/107158068/fa3835a7-2541-4541-b864-e42bdebb56c1)
 # Prerequisitos:
 * `Raspberry Pi 4 Modelo B 2GB`. https://amzn.to/3K7diXR
 * `64GB tarjeta MicroSD`. https://amzn.to/3ynPiNz
