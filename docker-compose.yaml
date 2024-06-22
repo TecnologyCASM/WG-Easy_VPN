@@ -11,7 +11,7 @@ services:
       - PASSWORD=${WG_PASSWORD}
       - WG_HOST=${WG_HOST}
       - WG_PORT=51820
-      - WG_DEFAULT_DNS=${FTLCONF_LOCAL_IPV4}
+      - WG_DEFAULT_DNS=${WG_DNS}
       - WG_DEFAULT_ADDRESS=100.64.0.x 
       - WG_ALLOWED_IPS=0.0.0.0/0, ::/0 
     ports:
