@@ -1,17 +1,19 @@
 ---
 services:
   wg-easy:
-    image: ghcr.io/wg-easy/wg-easy
+    image: ghcr.io/wg-easy/wg-easy:latest
     container_name: WG-Easy_VPN
     cap_add:
       - NET_ADMIN
       - SYS_MODULE
     environment:
       - LANG=es
-      - PASSWORD=p4ssw0rd
-      - WG_DEFAULT_DNS=1.1.1.1
-      - WG_HOST=tu dominio ó la IP pública
+      - PASSWORD=${WG_PASSWORD}
+      - WG_HOST=${WG_HOST}
       - WG_PORT=51820
+      - WG_DEFAULT_DNS=${FTLCONF_LOCAL_IPV4}
+      - WG_DEFAULT_ADDRESS=100.64.0.x 
+      - WG_ALLOWED_IPS=0.0.0.0/0, ::/0 
     ports:
       - 51820:51820/udp
       - 51821:51821/tcp
